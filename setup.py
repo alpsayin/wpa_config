@@ -1,4 +1,4 @@
-#!/usr/share/python3
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
 # wpa_config - a config manager for wpa_supplicant
