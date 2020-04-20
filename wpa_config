@@ -173,10 +173,10 @@ def add(args):
     try:
         network.write(network_dir=args.directory,
                       overwrite=args.force)
-    except OSError, e:
+    except OSError as e:
         print("Couldn't write config file: {}".format(e))
         exit(1)
-    except FileExistsError, e:
+    except FileExistsError as e:
         print("Config file for '{}' already exists.".format(network.ssid),
               "Refusing to overwrite unless explicitly told to. (-f/--force)")
         exit(1)
@@ -206,7 +206,7 @@ def make(args):
             WPA_SUPPLICANT_CONFIG + ".bkp"))
         with open(WPA_SUPPLICANT_CONFIG, "w") as cfile:
             cfile.write(config)
-    except OSError, e:
+    except OSError as e:
         print("Couldn't write config file: {}".format(e))
         exit(1)
 
@@ -248,7 +248,7 @@ def edit(args):
         exit(1)
     try:
         subprocess.call([editor, cfile])
-    except OSError, e:
+    except OSError as e:
         print("Failed to invoke editor: {}".format(e))
 
 
@@ -264,7 +264,7 @@ def migrate(args):
                   "Refusing to overwrite unless explicitly",
                   "told to. (-f/--force)")
             exit_status = 1
-        except OSError, e:
+        except OSError as e:
             print("Couldn't write config file: {}".format(e))
             exit_status = 1
     exit(exit_status)
@@ -342,7 +342,10 @@ def main():
     help_mode.set_defaults(func=lambda _: parser.print_help())
 
     args = parser.parse_args()
-    args.func(args)
+    if hasattr(args, 'func'):
+        args.func(args)
+    else:
+        parser.print_help()
 
 
 if __name__ == "__main__":
