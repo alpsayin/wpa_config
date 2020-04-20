@@ -1,4 +1,4 @@
-#!/usr/share/python2
+#!/usr/share/python3
 # -*- coding: utf-8 -*-
 #
 # wpa_config - a config manager for wpa_supplicant
@@ -8,4 +8,4 @@
 # This program is Free Software under the non-terms
 # of the Anti-License. Do whatever the fuck you want.
 #
-# Github: https://github.com/proxypoke/wpa_config
+# Github: https://github.com/alpsayin/wpa_config
