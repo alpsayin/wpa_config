@@ -37,7 +37,7 @@ setup(
     ],
     classifiers=[
         'Environment :: Console',
-        'Development Status :: 5 - Beta',
+        'Development Status :: 4 - Beta',
         'Intended Audience :: System Administrators',
         'License :: Public Domain',
         'Operating System :: Unix',
