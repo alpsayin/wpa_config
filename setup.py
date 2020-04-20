@@ -1,4 +1,4 @@
-#!/usr/share/python2
+#!/usr/share/python3
 # -*- coding: utf-8 -*-
 #
 # wpa_config - a config manager for wpa_supplicant
@@ -41,7 +41,7 @@ setup(
         'Intended Audience :: System Administrators',
         'License :: Public Domain',
         'Operating System :: Unix',
-        'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3.7',
         'Topic :: System :: Networking',
         'Topic :: System :: Systems Administration',
         'Topic :: Utilities',
