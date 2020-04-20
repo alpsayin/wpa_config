@@ -10,7 +10,7 @@
 #
 # Github: https://github.com/proxypoke/wpa_config
 
-from distutils.core import setup
+from setuptools import setup
 
 version = "0.3"
 
