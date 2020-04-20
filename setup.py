@@ -12,15 +12,15 @@
 
 from distutils.core import setup
 
-version = "0.2"
+version = "0.3"
 
 setup(
     name='wpa_config',
     version=version,
     description='a simple config manager for wpa_supplicant',
-    author='slowpoke',
+    author='slowpoke, alpsayin',
     author_email='mail+pypi@slowpoke.io',
-    url='https://github.com/proxypoke/wpa_config',
+    url='https://github.com/alpsayin/wpa_config',
     download_url=''.join(['https://github.com/proxypoke/wpa_config/archive/',
                           '{}.tar.gz'.format(version)]),
     scripts=[
@@ -37,7 +37,7 @@ setup(
     ],
     classifiers=[
         'Environment :: Console',
-        'Development Status :: 4 - Beta',
+        'Development Status :: 5 - Beta',
         'Intended Audience :: System Administrators',
         'License :: Public Domain',
         'Operating System :: Unix',
